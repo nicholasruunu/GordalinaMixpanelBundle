@@ -54,6 +54,14 @@ class MixpanelDataCollector extends DataCollector implements LateDataCollectorIn
             'time' => 0,
         );
     }
+	
+    /**
+     * {@inheritdoc}
+     */	
+    public function reset()
+    {
+        $this->data = array();
+    }
 
     /**
      * {@inheritdoc}
