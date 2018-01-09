@@ -36,7 +36,6 @@ class GordalinaMixpanelExtension extends Extension
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
 
-        $this->registerClassesToCompile();
         $this->loadRegistry($config, $container);
         $this->loadParameters($config, $container);
     }
