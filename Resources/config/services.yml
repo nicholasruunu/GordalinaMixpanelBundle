@@ -2,7 +2,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: services/event_listeners.yml }
     - { resource: services/security.yml }
-    - { resource: services/data_collector.yml }
+    # - { resource: services/data_collector.yml }
 
 services:
     gordalina_mixpanel.registry:
